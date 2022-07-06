@@ -16,11 +16,7 @@ class Server {
         this.server = http.createServer(this.app)
 
         //configuracion de sockets
-        this.io = socketio(this.server, {
-            cors: {
-            origin: "*",
-           
-          }});
+        this.io = socketio(this.server, {});
         
     }
 
