@@ -24,10 +24,6 @@ class Server {
         //desplegar el directorio publico
         this.app.use(express.static(path.resolve(__dirname,'../public')))
 
-        
-       
-
-    
     }
 
     configurarSockets(){
